@@ -1,5 +1,5 @@
 {
-  "name": "50-projects",
+  "name": "Java-Script",
   "version": "1.0.0",
   "description": "This repository contains 50 projects done with HTML, CSS and JavaScript",
   "main": "app.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/greit0n/50-projects.git"
+    "url": "git+https://github.com/Eliswer/JavaScript-course.git"
   },
-  "author": "Georgi Damyanov",
+  "author": "Eli",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/greit0n/50-projects/issues"
+    "url": "https://github.com/Eliswer/JavaScript-course/issues"
   },
-  "homepage": "https://github.com/greit0n/50-projects#readme",
+  "homepage": "https://github.com/Eliswer/JavaScript-course#readme",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.1.1",
     "css-reset-and-normalize": "^2.3.6"
