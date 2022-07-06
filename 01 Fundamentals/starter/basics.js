@@ -75,8 +75,8 @@ console.log(firstName + ' ' + lastName); // ' ' creating a space
 let x = 10 + 5;
 x += 10; //x = x + 10; or x = 15 + 10; =25
 x *= 4; //x = 25 * 4 = 100;
-x ++; //100+1 = 101
-x --; //100 - 1 = 99
+x++; //100+1 = 101
+x--; //100 - 1 = 99
 //there is no equal sign, so this result is not 100 again
 console.log(x);
 
