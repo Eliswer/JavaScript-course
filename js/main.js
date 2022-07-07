@@ -50,9 +50,9 @@ const birth = 2000;
 //const job; //this varibale cant be empty, we need an initial value
 //better to use const
 
-var job = 'programmer';
+let job = 'programmer';
 job = 'teacher';
-//similar to let, older version, dont use it
+//similar to let, older version, don't use it
 
 //OPERATORS
 //math operators
@@ -82,7 +82,7 @@ console.log(x);
 
 //Comparison operators = to make boolean
 console.log(ageEli > ageSarah);
-//is the Elis age greater than Sarahs ahe ? Yes = TRUE
+//is the Elis age greater than Sarah's age ? Yes = TRUE
 // <, >, <=, =>
 console.log(ageSarah >= 18);
 
