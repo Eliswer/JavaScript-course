@@ -37,32 +37,39 @@ fruitsArr.forEach(function(printValues, index, arr){
     console.log(printValues);
 })
 
-//2
-for (let input = 1; input <= 10; input++) {
-    console.log(input);
+console.log("Length of array: " + fruitsArr.length);
+
+for (let i = 0; i <= fruitsArr.length - 1; i++) {
+    console.log(fruitsArr[i]);
+}
+console.log("Length of array: " + fruitsArr.length);
+
+for (let i = fruitsArr.length - 1; i >= 0; i--) {
+    console.log(fruitsArr[i]);
 }
 
-for (let input = 10; input >= 1; input--) {
+//2
+for (let i = 1; i <= 10; i += 2) {
+    console.log(i);
+}
+
+for (let input = 10; input >= 0; input--) {
     console.log(input);
 }
 
 //2.1
 let numbersArr = [];
-numbersArr.push(Math.random());
-numbersArr.push(Math.random());
-numbersArr.push(Math.random());
-numbersArr.push(Math.random());
-numbersArr.push(Math.random());
-numbersArr.push(Math.random());
-numbersArr.push(Math.random());
-numbersArr.push(Math.random());
-numbersArr.push(Math.random());
-numbersArr.push(Math.random());
 
+
+
+for (let input = 0; input <= 10; input++) {
+    numbersArr.push(Math.random());
+}
 
 fruitsArr.forEach(function (values, index, arr){
     console.log(values);
-})
+});
+
 console.log(numbersArr);
 
 let numberOfElemenents = numbersArr.length
@@ -71,11 +78,37 @@ console.log(numberOfElemenents);
 //2.2
 
 function numbers(from, to) {
-    from = 1;
-    to = 10;
-    if (from === 1 && to === 10) {
-        console.log(for (let input = from; input <= to; input++) {
-            console.log(input);
-        })
+    if (from < to) {
+        for (let i = from; i <= to; i++) {
+            console.log(i);
+        }
+    } else if (from > to) {
+        for (let i = from; i >= to; i--) {
+            console.log(i);
+        }
+    } else {
+        console.log("Both values are equal");
     }
 }
+
+
+console.log('2.2 START')
+numbers(15, 2);
+
+console.log('2.2 END')
+
+for (let j = 0; j < 5; j++) {
+    consoleLogEli();
+}
+
+function consoleLogEli() {
+    console.log('Eli');
+}
+
+function printName(times, name) {
+    for (let i = 1; i <= times; i++) {
+        console.log(name);
+    }
+}
+
+printName(30, 'Georgi');
