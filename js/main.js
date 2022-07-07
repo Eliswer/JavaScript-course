@@ -1,6 +1,6 @@
 //1
 let fruitsArr = [];
-fruitsArr = ['apple', 'banana', 'orange', 'pomegranade', 'pear'];
+fruitsArr = ['apple', 'banana', 'orange', 'pomegranate', 'pear'];
 const arrPush = fruitsArr.push('melon');
 
 fruitsArr.forEach(function(printValues, index, arr){
