@@ -72,6 +72,7 @@ console.log(firstName + ' ' + lastName); // ' ' creating a space
 //another operator is typeof - gives us the type of the value
 
 //assigment operators
+// ++ increases the integer by one and += increases the integer by the number of your choice.
 let x = 10 + 5;
 x += 10; //x = x + 10; or x = 15 + 10; =25
 x *= 4; //x = 25 * 4 = 100;
