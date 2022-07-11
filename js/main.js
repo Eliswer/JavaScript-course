@@ -65,4 +65,27 @@ if (favNumber2 === 23) {
     console.log("That's awesome !")
 } //strict
 
-if (favNumber2 !== 20) console.log('Why not 20 ? That is MY favourite number !') //its also strict because I have !== not !=
+if (favNumber2 !== 20) console.log('Why not 20 ? That is MY favourite number !') //its also strict because I have !== not !
+
+const hasDriversLicence = true; //A
+const hasGoodVision = false; //B
+
+console.log(hasDriversLicence && hasGoodVision); //A && B (and)
+console.log(hasDriversLicence || hasGoodVision);
+console.log(!hasGoodVision);
+
+const shouldDrive = hasDriversLicence && hasGoodVision;
+if (shouldDrive) {
+    console.log('Sarah is abe to drive')
+} else {
+    console.log('Someone else should drive!')
+}
+
+const isTired = true;
+console.log(hasDriversLicence && hasGoodVision && isTired)
+
+if (hasDriversLicence && hasGoodVision && !isTired ) {
+    console.log('Sarah is able to drive')
+} else {
+    console.log('Someone else should drive');
+}
