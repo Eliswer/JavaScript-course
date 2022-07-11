@@ -64,9 +64,9 @@ if (markHigherBMI === true) {
 
 //Coding challenge #3
 
-const dolphinsData = (parseInt(96 + 108 + 89)/3);
+const dolphinsData = (88 + 91 + 110)/3;
 console.log(dolphinsData);
-const koalasData = (parseInt(88 + 91 + 110)/3);
+const koalasData = (88 + 91 + 310)/3;
 console.log(koalasData);
 
 if (dolphinsData > koalasData) {
@@ -76,5 +76,18 @@ if (dolphinsData > koalasData) {
 } else if (dolphinsData === koalasData) {
     console.log('It was a draw !')
 } else {
-    console.log('There was probably a mistake with the numbers :(')
+    console.log('No one won, sorry !')
+}
+
+const winnerTeam = (dolphinsData === koalasData)
+console.log(winnerTeam, dolphinsData);
+
+if (dolphinsData > koalasData && dolphinsData >=100) {
+    console.log('Dolphins won !')
+} else if (dolphinsData < koalasData && koalasData >=100) {
+    console.log('Koalas win !')
+} else if (winnerTeam && dolphinsData >=100) {
+    console.log('It was a draw !')
+} else {
+    console.log('No one won, sorry !')
 }
