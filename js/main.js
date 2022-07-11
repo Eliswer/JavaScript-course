@@ -35,9 +35,9 @@ console.log(markHigherBMI);
 
 //Georgi`s task
 
-let userHeight = parseFloat(prompt('Whats your height in cm?'));
-let userWeight = parseFloat(prompt('Whats your weight in kg ?'));
-console.log(userWeight / userHeight ** 2);
+// let userHeight = parseFloat(prompt('Whats your height in cm?'));
+// let userWeight = parseFloat(prompt('Whats your weight in kg ?'));
+// console.log(userWeight / userHeight ** 2);
 
 
 //Coding challenge #2
@@ -60,4 +60,21 @@ if (markHigherBMI === true) {
     console.log(`Mark's BMI is higher than John's! His Bmi is ${bmiMark}`)
 } else {
     console.log(`John's BMI is higher than Mark's! his Bmi is ${bmiJohn}`)
+}
+
+//Coding challenge #3
+
+const dolphinsData = (parseInt(96 + 108 + 89)/3);
+console.log(dolphinsData);
+const koalasData = (parseInt(88 + 91 + 110)/3);
+console.log(koalasData);
+
+if (dolphinsData > koalasData) {
+    console.log('Dolphins won !')
+} else if (dolphinsData < koalasData) {
+    console.log('Koalas win !')
+} else if (dolphinsData === koalasData) {
+    console.log('It was a draw !')
+} else {
+    console.log('There was probably a mistake with the numbers :(')
 }
