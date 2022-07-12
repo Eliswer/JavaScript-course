@@ -62,6 +62,7 @@ if (markHigherBMI === true) {
     console.log(`John's BMI is higher than Mark's! his Bmi is ${bmiJohn}`)
 }
 
+
 //Coding challenge #3
 
 const dolphinsData = (88 + 91 + 110)/3;
@@ -91,3 +92,7 @@ if (dolphinsData > koalasData && dolphinsData >=100) {
 } else {
     console.log('No one won, sorry !')
 }
+
+
+//Coding challenge #4
+
