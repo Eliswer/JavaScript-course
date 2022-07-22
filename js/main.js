@@ -154,14 +154,21 @@ console.log(`The bill was ${bill}, the tip was ${tipCalc} and the total value wa
 //     Apply this to the team's average scores
 
 const calcAverage = (data1, data2, data3) => {
-    const result = data1 + data2 + data3
-    const average = result / 3
-    return result;
+    return (data1 + data2 + data3) / 3;
 }
 
-// const doplhinsData2 = calcAverage(20, 110, 99);
-// const koalasData2 = calcAverage(80, 120, 60);
+const dolphinsData2 = calcAverage(85, 54, 41);
+const koalasData2 = calcAverage(23, 34, 27);
 
 const checkWinner = (avgDolphins, avgKoalas) => {
-    
+    console.log(avgDolphins, avgKoalas);
+    if (avgDolphins >= avgKoalas * 2) {
+        console.log(`Dolphins won ${avgDolphins} vs ${avgKoalas}!`)
+    } else if (avgKoalas >= avgDolphins * 2) {
+        console.log(`Koalas won ${avgKoalas} vs ${avgDolphins}!`)
+    } else {
+        console.log(`Nobody won..`)
+    }
 }
+
+checkWinner(dolphinsData2, koalasData2);
