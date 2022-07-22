@@ -112,3 +112,26 @@ function printName(times, name) {
 }
 
 printName(30, 'Georgi');
+
+//////
+
+const dolphinsData2 = calcAverage(85, 54, 41);
+const koalasData2 = calcAverage(23, 34, 27);
+
+checkWinner(dolphinsData2, koalasData2);
+
+function calcAverage(data1, data2, data3) {
+    return (data1 + data2 + data3) / 3;
+
+}
+
+function checkWinner(avgDolphins, avgKoalas) {
+    console.log(avgDolphins, avgKoalas);
+    if (avgDolphins >= avgKoalas * 2) {
+        console.log(`Dolphins won ${avgDolphins} vs ${avgKoalas}!`)
+    } else if (avgKoalas >= avgDolphins * 2) {
+        console.log(`Koalas won ${avgKoalas} vs ${avgDolphins}!`)
+    } else {
+        console.log(`Nobody won..`)
+    }
+}
