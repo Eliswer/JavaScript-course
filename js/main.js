@@ -153,4 +153,8 @@ console.log(`The bill was ${bill}, the tip was ${tipCalc} and the total value wa
 // § To check if number A is at least double number B, check for A >= 2 * B.
 //     Apply this to the team's average scores
 
-const calcAverage 
+const calcAverage = (data1, data2, data3) => {
+    const result = data1 + data2 + data3
+    const average = result / 3
+    return result;
+}
