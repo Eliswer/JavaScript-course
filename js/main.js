@@ -158,3 +158,10 @@ const calcAverage = (data1, data2, data3) => {
     const average = result / 3
     return result;
 }
+
+// const doplhinsData2 = calcAverage(20, 110, 99);
+// const koalasData2 = calcAverage(80, 120, 60);
+
+const checkWinner = (avgDolphins, avgKoalas) => {
+    
+}
