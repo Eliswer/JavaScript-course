@@ -17,4 +17,45 @@ const yearsUntilRetirement = function (birthYear, firstName) {
 }
 
 console.log(yearsUntilRetirement(1991, `Jonas`));
-console.log(yearsUntilRetirement(1950, `Mike`));
+console.log(yearsUntilRetirement(1950, `Mike `));
+
+
+//// Arrays
+
+const friend1 = 'Michael';
+const friend2 = 'Steven';
+const friend3 = 'Peter';
+
+const friends = ['Michael', 'Peter', 'Steven']; //array with [] brackets, way more usual, literal syntax
+console.log(friends);
+
+const years = new Array(1991, 1984, 2008, 2020); //instead of the brackets
+
+console.log(friends[0]); //arrays start at 0, the first value is 0 aka Michael
+console.log(friends[2]);
+
+console.log(friends.length); //exact amount of elements in an array, not 0 based. we start at 1
+console.log(friends[friends.length - 1]); //3 - 1 = 2 / Steven = position 2 in an array
+
+friends[2] = 'Jay'; //changing data of Steven
+console.log(friends);
+// friends = ['Bob', 'Alice'] = cant do, I can change only value by value in an array
+
+const firstName = 'Jonas';
+const jonas = [firstName, 'Schmedtmann', 2037 - 1991, 'teacher', friends]; //array and other variables can be stored in arrays
+console.log(jonas);
+console.log(jonas.length);
+
+////
+
+const calcAge2 = function(birthYear) {
+    return 2037 - birthYear;
+}
+const years2 = [1990, 1967, 2002, 2010, 2018];
+// calcAge(years2); //not gonna work
+const age1 = calcAge2(years[0]);
+const age2 = calcAge2(years[1]);
+const age3 = calcAge2(years[years.length-1]);
+console.log(age1, age2, age3);
+
+const ages = [calcAge2(years[0]), calcAge2(years[1]), calcAge2(years[years.length-1])]; //storing a value produces from my function into an array
