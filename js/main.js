@@ -59,3 +59,41 @@ const age3 = calcAge2(years[years.length-1]);
 console.log(age1, age2, age3);
 
 const ages = [calcAge2(years[0]), calcAge2(years[1]), calcAge2(years[years.length-1])]; //storing a value produces from my function into an array
+////
+
+//add elements
+const bestFriends = ['Eli', 'Denisa','Ivana'];
+const newLenght = bestFriends.push('Jay'); //adding a new element to the end of an array, push is a function, passing arguments into function
+//we stored the result of a function push into a variable
+console.log(bestFriends);
+console.log(newLenght);
+
+bestFriends.unshift('John'); //added new elements at the start of an array
+console.log(bestFriends);
+
+//remove elements
+bestFriends.pop(); //removes the last elements
+const popped = bestFriends.pop();
+console.log(popped); //console logs me what the function does = Ivana = cuz she is being removed
+console.log(bestFriends);
+
+bestFriends.shift(); //remove an element from the start of an array
+console.log(bestFriends);
+
+console.log(bestFriends.indexOf('Denisa'));
+console.log(bestFriends.indexOf('Steven')); //-1 cuz we dont have Steven in our array
+
+console.log(bestFriends.includes('Steven')); //if Steven is included in bestFriends = false
+console.log(bestFriends.includes('Eli')); //true
+
+console.log('/////////')
+//
+bestFriends.push(230);
+console.log(bestFriends.includes('230'));
+console.log(bestFriends.includes(230));
+
+if (bestFriends.includes('Peter')) { //only if this is true, if - works with booleans
+    console.log('You have a friend named Peter !')
+} else if (bestFriends.includes('Eli')) {
+    console.log('You have a friend named Eli')
+}
