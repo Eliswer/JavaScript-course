@@ -64,7 +64,11 @@ const jonas = {
 
     calcAge: function () {
         this.age = 2037 - this.birthYear; //added new property = age, like before with location
-        return this.age;
+        return this.age;                 // this - is the same as jonas
+    },
+
+    getSumarry: function () {
+        return `${this.firstName} is a ${this.calcAge()}-year old ${this.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} drivers licence.`
     }
 };
 
@@ -75,3 +79,4 @@ console.log(jonas.age);
 
 // Challenge
 //"Jonas is a 46-year old teacher and he has a drivers licence"
+console.log(jonas.getSumarry());
