@@ -54,13 +54,24 @@ const jonas = {
     friends: ['Michael', 'Fernando'],
     hasDriversLicense: true,
 
-    calcAge: function () {
-        return  2037 - this.birthYear; //this - is calling the object and accessing it for birthYear
-    }
+// 1    // calcAge: function(birthYear) { //any function attached to an object is called a method, here we have a function value
+//          return 2037 - birthYear;
+//       }
 
-//1    // calcAge: function(birthYear) { //any function attached to an object is called a method, here we have a function value
-    //    return 2037 - birthYear;
-    // }
+// 2    // calcAge: function () {
+//         return  2037 - this.birthYear; //this - is calling the object and accessing it for birthYear
+//     }
+
+    calcAge: function () {
+        this.age = 2037 - this.birthYear; //added new property = age, like before with location
+        return this.age;
+    }
 };
- //1 // console.log(jonas.calcAge(jonas.birthYear));
+
+ // 1 // console.log(jonas.calcAge(jonas.birthYear));
  // console.log(jonas['calcAge'](jonas.birthYear));
+
+console.log(jonas.age);
+
+// Challenge
+//"Jonas is a 46-year old teacher and he has a drivers licence"
