@@ -39,3 +39,28 @@ eli['instagram'] = '@_eliswer_';
 console.log(eli);
 
 console.log(`${eli.firstName} has ${eli.friends.length} friends, and her best friends is ${eli.friends[0]}`);
+
+////
+
+function calcAge(birthYear) {
+    return 2037 - birthYear;
+};
+
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Schmedtmann',
+    birthYear: 1991,
+    job: 'programmer',
+    friends: ['Michael', 'Fernando'],
+    hasDriversLicense: true,
+
+    calcAge: function () {
+        return  2037 - this.birthYear; //this - is calling the object and accessing it for birthYear
+    }
+
+//1    // calcAge: function(birthYear) { //any function attached to an object is called a method, here we have a function value
+    //    return 2037 - birthYear;
+    // }
+};
+ //1 // console.log(jonas.calcAge(jonas.birthYear));
+ // console.log(jonas['calcAge'](jonas.birthYear));
