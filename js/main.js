@@ -209,6 +209,9 @@ console.log(bills, tips);
 const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 console.log(totals);
 
+
+// Coding challenge #3
+
 // Let's go back to Mark and John comparing their BMIs! This time, let's use objects to
 // implement the calculations! Remember: BMI = mass / height ** 2 = mass
 //     / (height * height) (mass in kg and height in meter)
@@ -218,7 +221,7 @@ console.log(totals);
 //      2. Create a 'calcBMI' method on each object to calculate the BMI (the same
 // method on both objects). Store the BMI value to a property, and also return it
 // from the method
-//       3. Log to the console who has the higher BMI, together with the full name and the
+//      3. Log to the console who has the higher BMI, together with the full name and the
 // respective BMI. Example: "John's BMI (28.3) is higher than Mark's (23.9)!"
 // Test data: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m
 // tall
@@ -254,3 +257,45 @@ if (mark.bmi > john.bmi) {
 } else if (john.bmi > mark.bmi) {
     console.log(`${john.fullName}s BMI ${john.bmi} is higher than ${mark.fullName}s BMI ${mark.bmi}`)
 };
+
+
+// Coding challenge #4
+
+// Let's improve Steven's tip calculator even more, this time using loops!
+//     Your tasks:
+//     1. Create an array 'bills' containing all 10 test bill values
+//     2. Create empty arrays for the tips and the totals ('tips' and 'totals')
+//     3. Use the 'calcTip' function we wrote before (no need to repeat) to calculate
+// tips and total values (bill + tip) for every bill value in the bills array. Use a for
+//     loop to perform the 10 calculations!
+//     Test data: 22, 295, 176, 440, 37, 105, 10, 1100, 86 and 52
+// Hints: Call ‘calcTip ‘in the loop and use the push method to add values to the
+// tips and totals arrays �
+// Bonus:
+
+const billsArray = [
+    22,
+    295,
+    176,
+    440,
+    37,
+    105,
+    10,
+    1100,
+    86,
+    52
+];
+
+const tipsArray = [];
+const totalsArray = [];
+
+const calcTip = function(bill) {
+    return bill >= 50 && bill <= 300 ? (bill * 0.15) : (bill * 0.2);
+};
+
+for (let i = 0; i < billsArray.length; i++) {
+    const tip = calcTip(billsArray[i]);
+    tipsArray.push(tip);
+    totalsArray.push(tip + billsArray[i]);
+}
+console.log(billsArray, tipsArray, totalsArray);
